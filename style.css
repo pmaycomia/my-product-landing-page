@@ -1,6 +1,10 @@
 body {
-    background-color: white;
-  }
+  background-color: white;
+}
+
+.placeholder {
+  max-width: 200px;
+}
    
   
   .navbar {
