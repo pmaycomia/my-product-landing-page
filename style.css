@@ -1,30 +1,52 @@
 body {
   background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.placeholder {
-  max-width: 200px;
+.navbar {
+  position: fixed; 
+  overflow: hidden;
+  background-color: rgb(133, 62, 62);    
+  top: 0;
+  width: 100%; 
+  height: 70px;
+  font-family: 'Lobster', cursive;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-   
+
+.logo {
+  display: flex;  
+  align-items: center;
+  margin-right: auto;
+  padding-left: 30px;
+}
+
+#logo{
+  height: 50px;
+}
+
+.logo a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #FBF5DA;  
+}
+
+.nav-link {
+  margin-right: 50px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 25px;
+}
   
-  .navbar {
-    overflow: hidden;
-    background-color: #fff;;
-    position: fixed; 
-    top: 0;
-    width: 100%; 
-    height: 60px
-  }
+/* media query for navbar starting at 900px
+create a burger menu
+center logo*/
   
   
-  #header-img {
-    position: absolute;
-    left: 100px;
-    height: 50px;
-    padding-top: 10px;
-  
-    
-  }
   
   .navbar h2 {
     position: absolute;
@@ -32,16 +54,7 @@ body {
     font-family: 'Lobster', cursive;
   }
   
-  .navbar a {
-    display: inline;
-    color: #000;
-    padding-right: 50px;  
-    text-decoration: none;
-    float: right;
-    padding-top: 25px;
-    fontsize: 40px;
-    font-family: 'Lobster', cursive;
-  }
+  
   
   
   .nav-link:hover {
@@ -184,4 +197,8 @@ body {
     
   }
   
-  
+
+  .placeholder {
+    max-width: 200px;
+  }
+       
