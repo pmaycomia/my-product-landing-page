@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* NAVBAR */
 .navbar {
   position: fixed; 
   overflow: hidden;
@@ -50,13 +50,20 @@ body {
 /* media query for navbar starting at 900px
 create a burger menu
 center logo*/
- 
+
+
+
+
+/* WELCOME IMAGE */
 .welcome {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
 }
 
 #top-image {
-  
+  display: block;
   width: auto;
   height: 100px;
 }
@@ -71,12 +78,7 @@ center logo*/
   
   
   
-  
-  
-  /* h3, h2 {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-  } */
+
   #why {
       font-family: 'Montserrat', sans-serif;
       padding-left: 50px;
