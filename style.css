@@ -57,7 +57,7 @@ center logo*/
 
 
 
-/* WELCOME IMAGE */
+/* HEADER IMAGE */
 .welcome {
   display: flex;
   justify-content: center;
@@ -84,30 +84,20 @@ center logo*/
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 500px;
+  height: 700px;
 }
   
-  
-  
+.why h4 {
+  font-family: 'Montserrat', sans-serif;
+
+}  
   
   
 
-  #why {
-      font-family: 'Montserrat', sans-serif;
-      padding-left: 50px;
-      
-  }
-  #star {
+
+
   
-    max-width: 50px;
-    background-color: #EFD76C;
-    border-radius: 15px;
-  
-  }
-  h4 {
-    font-family: 'Montserrat', sans-serif;
-  
-  }
+/* E-MAIL SUBSCRIPTION */
   #subscribe {
     text-align: center;
     background: #F6D0CB;
