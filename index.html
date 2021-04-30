@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <div class="navbar">
     <div class="logo">
       <img id="logo" src="./images/Logo.png">
@@ -24,89 +25,97 @@
     <a href="#products" class="nav-link">Our Products</a>    
   </div>
 
+  <!-- WELCOME IMAGE -->
+  <div class="welcome">
+    <img id="top-image" src="./images/placeholder-image.png" alt="">
     <h3 id="fresh"> fresh and home-made kimchi at your doorstep</h3>
+  </div>  
     
-    <div class="why">
+  <!-- THE WHYs -->
+  <div class="why">
 
-      <i class="material-icons-outlined">auto_awesome</i>
-      <i class="material-icons-outlined">delivery_dining</i>      
-      <h4>Fast Delivery</h4>    
-      <p> 
-        Free and same-day delivery for a minimum purchase of €20.
-      </p>
-       
-      <h4> Organic </h4>
-      <p> We use only the premium and eco-friendly ingredients </p>
-        
-      <h4> Proven To Spice Up Your Meals</h4>
-      <p> With many satisfied customers who always come back for more. </p>
-        
-      <h4> The Chef </h4>
-      <p> 
-        Nobody else would be as passionate as Chef Vian. 
-        <br>
-        Through picking out the best ingredients, to packaging the products just to provide your fresh and home-made Kimchi needs.  
-      </p>
-    
-    </div>
-   
-    <div class="subscribe">      
-      <h3> 
-        Subscribe so we can keep you up-to-date with our great offers and new products! 
-      </h3>
+    <i class="material-icons-outlined">auto_awesome</i>
+    <i class="material-icons-outlined">delivery_dining</i>
 
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" placeholder="enter your email here" name="email">
-        <input id="submit" type="submit" value="SUBMIT">
-      </form>
-    </div>
-   
-    
-    <div class="how">
-     <a id="how"></a>
-       <span class="how text" id="love"> 
-         KIMCHI MADE 
-         <br>
-         WITH LOVE 
-        </span>
+    <h4>Fast Delivery</h4>    
+    <p> 
+      Free and same-day delivery for a minimum purchase of €20.
+    </p>
+     
+    <h4> Organic </h4>
+    <p> We use only the premium and eco-friendly ingredients </p>
       
-      <div class="how video" align="center">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/f13X2hLYAhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>    
-    </div>
+    <h4> Proven To Spice Up Your Meals</h4>
+    <p> With many satisfied customers who always come back for more. </p>
+      
+    <h4> The Chef </h4>
+    <p> 
+      Nobody else would be as passionate as Chef Vian. 
+      <br>
+      Through picking out the best ingredients, to packaging the products just to provide your fresh and home-made Kimchi needs.  
+    </p>
+  
+  </div>  
    
-    <div class="packages">
-      <a id="pricing"></a>
-      <h2> OUR PACKAGES: </h2>
+  <!-- E-MAIL SUBSCRIPTION -->
+  <div class="subscribe">      
+    <h3> 
+      Subscribe so we can keep you up-to-date with our great offers and new products! 
+    </h3>
 
-        <div class="pack-container"> 
-          <h5> €12 </h5><br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="enter your email here" name="email">
+      <input id="submit" type="submit" value="SUBMIT">
+    </form>
+  </div>  
+   
+  <!-- VIDEO CLIP  -->
+  <div class="how">
+    <a id="how"></a>
+      <span class="how text" id="love"> 
+        KIMCHI MADE 
+        <br>
+        WITH LOVE 
+       </span>
+     
+     <div class="how video" align="center">
+       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/f13X2hLYAhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+       </iframe>
+     </div>    
+   </div>  
+  
+  <!-- PRICING -->
+   <div class="packages">
+    <a id="pricing"></a>
+    <h2> OUR PACKAGES: </h2>
+
+      <div class="pack-container"> 
+        <h5> €12 </h5><br>
+        <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">
+        <p>1 packet of Kimchee (1000g)</p>
+        <!-- change to button? -->
+        <input id="choose" type="submit" value="CHOOSE">
+      </div>
+      
+      <div class="pack-container"> 
+          <h5> €20 </h5>
           <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">
-          <p>1 packet of Kimchee (1000g)</p>
-          <!-- change to button? -->
+          <p>2 packs of Kimchee (2000g in total)</p>
           <input id="choose" type="submit" value="CHOOSE">
-        </div>
-        
-        <div class="pack-container"> 
-            <h5> €20 </h5>
-            <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">
-            <p>2 packs of Kimchee (2000g in total)</p>
-            <input id="choose" type="submit" value="CHOOSE">
-        </div>
-        
-        <div id="pack-container"> 
-          <h5> €45 </h5><br>
-          <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">
-          <p>5 packs of Kimchee (5000g)</p>           
-          <input id="choose" type="submit" value="CHOOSE">
-        </div>
-        
-    </div>  
+      </div>
+      
+      <div class="pack-container"> 
+        <h5> €45 </h5><br>
+        <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">
+        <p>5 packs of Kimchee (5000g)</p>           
+        <input id="choose" type="submit" value="CHOOSE">
+      </div>
+      
+  </div>    
     
   
-      
-    <div id="other-prods">
+  <!-- OTHER PRODUCTS -->
+    <div class="other-prods">
       <a id="products"> </a>
       
       <img class="placeholder" src="./images/placeholder-image.png" alt="placeholder">

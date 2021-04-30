@@ -41,36 +41,42 @@ body {
   text-decoration: none;
   font-size: 25px;
 }
+
+.nav-link:hover {
+  color: red;
+}
+
   
 /* media query for navbar starting at 900px
 create a burger menu
 center logo*/
+ 
+.welcome {
+  display: flex;
+}
+
+#top-image {
+  
+  width: auto;
+  height: 100px;
+}
+
+#fresh {
+  font-family: 'Lobster', cursive;
+ font-size: 50px;
+ color: #272838;
+}
   
   
   
-  .navbar h2 {
-    position: absolute;
-    left: 160px;
-    font-family: 'Lobster', cursive;
-  }
   
   
   
   
-  .nav-link:hover {
-    color: red;
-  }
-  
-  #fresh {
-     font-family: 'Lobster', cursive;
-    font-size: 50px;
-    color: #272838;
-  }
-  
-  h3, h2 {
+  /* h3, h2 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-  }
+  } */
   #why {
       font-family: 'Montserrat', sans-serif;
       padding-left: 50px;
