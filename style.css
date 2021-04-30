@@ -8,6 +8,7 @@ body {
 .navbar {
   position: fixed; 
   overflow: hidden;
+              /*first, white; at scroll, turn to this dark red color. */
   background-color: rgb(133, 62, 62);    
   top: 0;
   width: 100%; 
@@ -17,6 +18,12 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+
+  
+/* media query for navbar starting at 900px
+create a burger menu
+center logo*/
+
 
 .logo {
   display: flex;  
@@ -46,10 +53,6 @@ body {
   color: red;
 }
 
-  
-/* media query for navbar starting at 900px
-create a burger menu
-center logo*/
 
 
 
@@ -59,19 +62,29 @@ center logo*/
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 400px;
-}
-
-#top-image {
-  display: block;
-  width: auto;
-  height: 100px;
+  height: 500px;
+  background-image: url(./images/kimchi-closeup.jpg);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
 }
 
 #fresh {
-  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat', sans-serif;
  font-size: 50px;
- color: #272838;
+ color: #ffffff;
+}
+
+/* THE WHYs */
+
+.why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
 }
   
   
