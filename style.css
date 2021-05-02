@@ -75,6 +75,7 @@ center logo*/
   color: #ffffff;
 }
 
+
 /* THE WHYs */
 /* media query 
 turn about3 flexdir to row 
@@ -83,9 +84,8 @@ increase height of why
 .why {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 700px;
+  align-items: center;  
+  height: 600px;
   text-align: center;
   width: 100%;
 }
@@ -94,7 +94,7 @@ increase height of why
   font-family: 'Montserrat', sans-serif;
   color: #cf3b3b;
   font-size: 20px;
-
+  margin: 0;
 }
 
 .why i {
@@ -107,25 +107,26 @@ increase height of why
 }
 
 
-.about3 {
-  display: flex;
-  flex-direction: row;
-}
-
-
 .about {
-  background: rgb(253, 235, 135);
-  border-radius: 10px;
-  height: 150px;
-  width: 400px;
-  margin: 10px;
-  padding: 20px;
+  background: rgb(255, 238, 142);
+  border-radius: 3px;
+  height: 100px;
+  width: 100vh;
+  /* margin: 10px; */
+  padding: 5px;
   
 }
 
+.organic {
+  background: rgb(255, 236, 128);
+}
+
+.spice {
+  background: rgb(253, 233, 116);
+}
+
 .chef {
-  height: 200px;
-  width: 600px;
+  height: 150px;
   background: rgb(255, 231, 95);
 }
   
