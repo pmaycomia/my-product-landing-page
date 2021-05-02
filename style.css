@@ -221,25 +221,61 @@ input, button {
 
 .pack-container {
   font-family: 'Montserrat', sans-serif;
-  background: #9b0303;
+  background: #f0f0f0;
   width: 400px;
-  height: 400px;
+  height: 410px;
   border-radius: 3px;
   text-align: center;
-  padding: 0px 0px 5px 0px;
-  color: #ffffff;
+  color: #270101;
   margin: 10px;
 }
 
 .pack-image {
-  height: 200px;
+  width: 250px; /* width of container */
+  height: 230px; /* height of container */
+  object-fit: cover;
+  border: none;
 }
 
-  #choose {
-    color: #000;
-    background: #f79748;
-    border-radius: 5px;
-  }
+#choose {
+  
+  color: rgb(255, 255, 255);
+  background: #ce4009;
+  border: none;
+  /* border-radius: 5px; */
+  width: 100%;
+  height: 40px;
+}
+ 
+#choose:hover {
+  background-color: rgb(255, 136, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* COMING SOON */
+.coming-soon {
+  display: flex;
+  height: 1000px;
+}
+
+.coming-soon h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  color: #8c2718;
+  margin-left: 50px;
+}
+
+.soon-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.soon-img img {
+  height: 500px;
+}
 
 
 
@@ -265,45 +301,3 @@ input, button {
       max-width: 550px;
       border-radius: 50px;
   }
-  
-  @media (max-width: 720px) {
-    #header-img {
-    position: absolute;
-    left: 150px;
-    height: 50px;
-    padding-top: 10px;
-    }
-  
-    .navbar h2 {
-    position: absolute;
-    left: 210px;
-    font-family: 'Lobster', cursive;
-    }
-    
-     .navbar {
-       height: 100px;
-     }
-    
-    .navbar a {
-    display: inline;
-    color: #703d57;
-    padding-left: 60px;  
-    text-decoration: none;
-    float: left;
-    padding-top: 65px;
-    fontsize: 40px;
-  
-    }
-  
-     
-     #other-prods {
-      display: grid;
-    }
-    
-  }
-  
-
-  .placeholder {
-    max-width: 200px;
-  }
-       
