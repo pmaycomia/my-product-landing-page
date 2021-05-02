@@ -171,7 +171,9 @@ input, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: 600px;
+  border: 5px solid #8c2718;
+  margin: 40px 10px;
 }
 
 #love {
@@ -191,6 +193,7 @@ input, button {
   justify-content: center;
   align-items: center;
 }
+
   
 
 
@@ -253,9 +256,14 @@ input, button {
   cursor: pointer;
 }
 
+
+
 /* COMING SOON */
 .coming-soon {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 1000px;
 }
 
@@ -269,35 +277,14 @@ input, button {
 .soon-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .soon-img img {
   height: 500px;
 }
 
-
-
-
-
-  #other-prods {
-      gap: 50px;
-        display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  #prod1 {
-      max-width: 500px;
-      border-radius: 50px;
-  
-  }
-  #prod2 {
-      max-width: 500px;
-      border-radius: 50px;
-  
-  }
-  #prod3 {
-      max-width: 550px;
-      border-radius: 50px;
-  }
+.footer {
+  background-color: rgb(114, 145, 96);
+  height: 100px;
+}
