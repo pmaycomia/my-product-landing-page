@@ -108,7 +108,7 @@ increase height of why
 
 
 .about {
-  background: rgb(255, 238, 142);
+  background: rgb(253, 238, 149);
   border-radius: 3px;
   height: 100px;
   width: 100vh;
@@ -118,11 +118,11 @@ increase height of why
 }
 
 .organic {
-  background: rgb(255, 236, 128);
+  background: rgb(255, 236, 130);
 }
 
 .spice {
-  background: rgb(253, 233, 116);
+  background: rgb(255, 234, 114);
 }
 
 .chef {
@@ -143,75 +143,108 @@ increase height of why
   height: 250px;
   width: auto;
   border-radius: 5px; 
+  font-family: 'Lobster', cursive;
 
-  /* gradient bg */
+  /* gradient bg from coolors.co */
   background: hsla(17, 95%, 50%, 1);
   background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
   background: -moz-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
   background: -webkit-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F74C06", endColorstr="#F9BC2C", GradientType=1 );
-  /* gradient bg */
-
-  
+  /* gradient bg from coolors.co */  
 }
 
 .subscribe h3 {
-  color: #ffffff;
+  color: #fffdef;
   font-size: 30px;
-  font-family: 'Lobster', cursive;
   text-align: center;
 }
 
 input, button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
-/* VIDEO CLIP */
+/* VIDEO CLIP */ 
 
+.how {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+#love {
+  padding: 30px;
+  font-size: 70px;
+  text-align: center;
+  color: #8c2718;
+  font-family: 'Montserrat', sans-serif;
+  background-color: beige;
+}  
+
+.video {
+  padding: 10px;
+  background-color:blanchedalmond;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  
-  #love {
-    font-size: 80px;
-    text-align: center;
-    color: #8c2718;
-    font-family: 'Montserrat', sans-serif;
-  }
-  #packages {
-  
-    gap: 50px;
-        display: flex;
-      align-items: center;
-      justify-content: center;
-  
-  }
-  #twelve{
-    font-family: 'Montserrat', sans-serif;
-    background: #545678;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    text-align: center;
-    padding: 0px 0px 5px 0px;
-    color: #FBF5DA;
-  }
-  #twelve h5 {
-    color: #000;
-    background: #FBF5DA;
-    height: 30px;
-    width: 200px;
-    padding-top: 10px;
-    border-radius: 7px;  
-  }
-  #kimchi {
-    max-width: 180px;
-    border-radius: 7px;
-  }
+
+
+/* PRICING */
+
+.packages-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 800px;
+}
+
+.packages-box h2 {
+  color: green;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+.packages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* mquery, change to column */
+
+}  
+
+.pack-container {
+  font-family: 'Montserrat', sans-serif;
+  background: #9b0303;
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0px 0px 5px 0px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.pack-image {
+  height: 200px;
+}
+
   #choose {
     color: #000;
-    background: #F6D0CB;
+    background: #f79748;
     border-radius: 5px;
   }
+
+
+
+
+
   #other-prods {
       gap: 50px;
         display: flex;
