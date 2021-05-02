@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* NAVBAR */
 .navbar {
   position: fixed; 
@@ -53,10 +54,6 @@ center logo*/
   color: red;
 }
 
-
-
-
-
 /* HEADER IMAGE */
 .welcome {
   display: flex;
@@ -73,24 +70,64 @@ center logo*/
 
 #fresh {
   font-family: 'Montserrat', sans-serif;
- font-size: 50px;
- color: #ffffff;
+  margin: 20px 100px;
+  font-size: 55px;
+  color: #ffffff;
 }
 
 /* THE WHYs */
-
+/* media query 
+turn about3 flexdir to row 
+increase height of why
+*/
 .why {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 700px;
+  text-align: center;
+  width: 100%;
 }
   
 .why h4 {
   font-family: 'Montserrat', sans-serif;
+  color: #cf3b3b;
+  font-size: 20px;
 
-}  
+}
+
+.why i {
+  color: #8c2718;
+  align-items: center;
+}
+
+.why p {
+  font-style: italic;
+}
+
+
+.about3 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.about {
+  background: rgb(253, 235, 135);
+  border-radius: 10px;
+  height: 150px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  
+}
+
+.chef {
+  height: 200px;
+  width: 600px;
+  background: rgb(255, 231, 95);
+}
   
   
 
