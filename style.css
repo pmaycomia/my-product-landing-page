@@ -130,23 +130,46 @@ increase height of why
   background: rgb(255, 231, 95);
 }
   
-  
-
 
 
   
 /* E-MAIL SUBSCRIPTION */
-  #subscribe {
-    text-align: center;
-    background: #F6D0CB;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-   
-  }
-  input, button {
-      font-family: 'Open Sans', sans-serif;
-  }
+.subscribe {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: auto;
+  border-radius: 5px; 
+
+  /* gradient bg */
+  background: hsla(17, 95%, 50%, 1);
+  background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
+  background: -moz-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
+  background: -webkit-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F74C06", endColorstr="#F9BC2C", GradientType=1 );
+  /* gradient bg */
+
+  
+}
+
+.subscribe h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+input, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* VIDEO CLIP */
+
+  
   
   #love {
     font-size: 80px;
