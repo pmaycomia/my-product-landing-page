@@ -51,7 +51,8 @@ center logo*/
 }
 
 .nav-link:hover {
-  color: red;
+  color: rgb(247, 211, 7);
+
 }
 
 /* HEADER IMAGE */
@@ -108,7 +109,7 @@ increase height of why
 
 
 .about {
-  background: rgb(253, 238, 149);
+  background: rgb(253, 239, 159);
   border-radius: 3px;
   height: 100px;
   width: 100vh;
@@ -122,7 +123,7 @@ increase height of why
 }
 
 .spice {
-  background: rgb(255, 234, 114);
+  background: rgb(255, 233, 107);
 }
 
 .chef {
@@ -285,6 +286,36 @@ input, button {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgb(114, 145, 96);
-  height: 100px;
+  height: 150px;
+}
+
+#logo-footer {
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  color: #FBF5DA;  
+}
+
+.footlinks a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(255, 230, 121);
+}
+
+.footlinks a:hover {
+  color: #ce4009;
+}
+
+#contact {
+  text-decoration: none;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+#contact:hover {
+  color: #eb4646;
 }
