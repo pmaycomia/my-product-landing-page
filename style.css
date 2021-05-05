@@ -151,7 +151,7 @@ nav .mainMenu .closeMenu , .icons i {
 #fresh {
   font-family: 'Montserrat', sans-serif;
   margin: 20px 100px;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #ffffff;
   text-align: center;
   
@@ -173,19 +173,22 @@ increase height of why
   align-items: center;  
   height: 600px;
   text-align: center;
+  flex-direction: column;
   /* width: 100%; */
 }
   
 .why h4 {
   font-family: 'Montserrat', sans-serif;
   color: #cf3b3b;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
+
 }
 
 .why i {
   color: #8c2718;
   align-items: center;
+  font-size: 2rem;
 }
 
 .why p {
@@ -194,29 +197,27 @@ increase height of why
 
 
 .about {
-  background: rgb(253, 239, 159);
   border-radius: 3px;
-  height: 100px;
-  /* width: 100vh; */
-  margin: 10px;
-  padding: 5px;
-  
-}
-
-.organic {
-  background: rgb(255, 236, 130);
-}
-
-.spice {
-  background: rgb(255, 233, 107);
-}
-
-.chef {
   height: 150px;
-  background: rgb(255, 231, 95);
+  width: 600px;
+  margin: 10px;
+  padding: 25px;  
 }
-  
 
+.delivery { background: rgb(211, 228, 115); }
+.organic { background: rgb(219, 240, 145); margin: 50px 0 0 50px;}
+.first-row { display: flex;}
+.second-row { display: flex;  }
+.spice { background: rgb(238, 245, 144); }
+.chef { background: rgb(253, 255, 164); margin: 50px 0 0 50px;}
+  
+@media (max-width: 850px) {
+  .why { height: 900px;}
+  .first-row { flex-direction: column;}
+  .second-row { flex-direction: column; }
+  .about { margin: 5px 0; height: 150px;}
+  
+}
 
   
 /* E-MAIL SUBSCRIPTION */
@@ -240,7 +241,10 @@ increase height of why
   /* gradient bg from coolors.co */  
 }
 
-.subscribe:hover { background: #8c2718;}
+.subscribe:hover { 
+  background-color: green;
+ 
+}
 
 .subscribe h3 {
   color: #fffdef;
