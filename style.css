@@ -8,16 +8,13 @@ body {
 
 
 /* NAVBAR */
-
-
-nav {
-  background: #000;
+nav {  
   color: #fff;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(143, 53, 53);  
+  font-family: 'Lobster', cursive;
 }
-
-
 
 .logo {
   display: flex;  
@@ -78,7 +75,7 @@ nav .mainMenu .closeMenu , .icons i {
   nav .openMenu {
     display: block;
   }
-  
+
   nav .mainMenu {
     height: 100vh;
     position: fixed;
@@ -89,11 +86,16 @@ nav .mainMenu .closeMenu , .icons i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background-color: rgb(143, 53, 53);   
+    opacity: 0.99;
     transition: top 1s ease;
     display: none;
   }
 
+  nav {
+    position: fixed;
+    width: 100%;
+  }
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
@@ -101,18 +103,27 @@ nav .mainMenu .closeMenu , .icons i {
     right: 20px;
   }
 
+  .nav-link {
+    padding-bottom: 50px;
+    margin: 0px;
+    font-size: 2rem;
+  } 
+
   
 
   nav .mainMenu li a:hover {
     background: none;
     color: rgb(255, 123, 0);
-    font-size: 1.6rem;
+    font-size: 2.1rem;
   }  
 
   .icons i {
     display: inline-block;
     padding: 12px;
   }
+
+  .icons i:hover { font-size: 2.2rem; }
+  
   
   
 }
@@ -122,8 +133,8 @@ nav .mainMenu .closeMenu , .icons i {
 /* HEADER IMAGE */
 .welcome {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content:center;
+  align-items: center;
   height: 500px;
   background-image: url(./images/kimchi-closeup.jpg);
   background-repeat: no-repeat;
@@ -134,11 +145,20 @@ nav .mainMenu .closeMenu , .icons i {
   width: auto;
 }
 
+
+
+
 #fresh {
   font-family: 'Montserrat', sans-serif;
   margin: 20px 100px;
-  font-size: 55px;
+  font-size: 5vw;
   color: #ffffff;
+  text-align: center;
+  
+}
+
+@media (max-width: 850px) { 
+  #fresh { font-size: 8vw; }
 }
 
 
@@ -219,6 +239,8 @@ increase height of why
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F74C06", endColorstr="#F9BC2C", GradientType=1 );
   /* gradient bg from coolors.co */  
 }
+
+.subscribe:hover { background: #8c2718;}
 
 .subscribe h3 {
   color: #fffdef;
@@ -380,7 +402,7 @@ iframe {
   align-items: center;
   flex-direction: column;
   background-color: rgb(81, 129, 66);
-  height: 150px;
+  height: 170px;
 }
 
 #logo-footer {
@@ -399,6 +421,13 @@ iframe {
 .footlinks a:hover {
   color: #ce4009;
 }
+
+.footer i {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer i:hover { font-size: 2.2rem; }
 
 #contact {
   font-family: 'Montserrat', sans-serif;
