@@ -11,6 +11,8 @@ body {
 nav {  
   color: #fff;
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   background-color: rgb(143, 53, 53);  
   font-family: 'Lobster', cursive;
@@ -69,66 +71,6 @@ nav .mainMenu .closeMenu , .icons i {
 
 
 
-@media (max-width: 850px) {
-  /* MOBILE */
-
-  nav .openMenu {
-    display: block;
-  }
-
-  nav .mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(143, 53, 53);   
-    opacity: 0.99;
-    transition: top 1s ease;
-    display: none;
-  }
-
-  nav {
-    position: fixed;
-    width: 100%;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .nav-link {
-    padding-bottom: 50px;
-    margin: 0px;
-    font-size: 2rem;
-  } 
-
-  
-
-  nav .mainMenu li a:hover {
-    background: none;
-    color: rgb(255, 123, 0);
-    font-size: 2.1rem;
-  }  
-
-  .icons i {
-    display: inline-block;
-    padding: 12px;
-  }
-
-  .icons i:hover { font-size: 2.2rem; }
-  
-  
-  
-}
-
-
 
 /* HEADER IMAGE */
 .welcome {
@@ -157,16 +99,10 @@ nav .mainMenu .closeMenu , .icons i {
   
 }
 
-@media (max-width: 850px) { 
-  #fresh { font-size: 8vw; }
-}
 
 
 /* THE WHYs */
-/* media query 
-turn about3 flexdir to row 
-increase height of why
-*/
+
 .why {
   display: flex;
   justify-content: center;
@@ -199,25 +135,18 @@ increase height of why
 .about {
   border-radius: 3px;
   height: 150px;
-  width: 600px;
+  width: 500px;
   margin: 10px;
   padding: 25px;  
 }
 
 .delivery { background: rgb(211, 228, 115); }
 .organic { background: rgb(219, 240, 145); margin: 50px 0 0 50px;}
-.first-row { display: flex;}
+.first-row { display: flex; }
 .second-row { display: flex;  }
 .spice { background: rgb(238, 245, 144); }
 .chef { background: rgb(253, 255, 164); margin: 50px 0 0 50px;}
   
-@media (max-width: 850px) {
-  .why { height: 900px;}
-  .first-row { flex-direction: column;}
-  .second-row { flex-direction: column; }
-  .about { margin: 5px 0; height: 150px;}
-  
-}
 
   
 /* E-MAIL SUBSCRIPTION */
@@ -297,10 +226,8 @@ iframe {
     flex-direction: column;
   }
 
-  #love {  width: 360px; }
+  #love {  max-width: 350px; }
 }
-
-  
 
 
 /* PRICING */
@@ -362,16 +289,13 @@ iframe {
 }
 
 
-
-
-
 /* COMING SOON */
 .coming-soon {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 1000px;
+  height: 800px;
 }
 
 .coming-soon h2 {
@@ -387,15 +311,8 @@ iframe {
   align-items: center;  
 }
 
-.soon-img img {
+.future-products {
   height: 500px;
-}
-
-@media (max-width: 1275px) {
-  .packages { flex-direction: column; }  
-  .packages-box { height: 1400px; }
-  .coming-soon { height: 1400px; }
-  .soon-img { flex-direction: column; }
 }
 
 /* FOOTER */
@@ -444,3 +361,170 @@ iframe {
 #contact:hover {
   color: #eb4646;
 }
+
+
+/* RESPONSIVE  */
+
+@media (max-width: 850px) {
+  /* MOBILE */
+
+  .logo {    padding-left: 60px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 53, 53);   
+    opacity: 0.99;
+    transition: top 1s ease;
+    display: none;
+
+  }
+
+  .mainMenu {padding: 0; }
+
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-link {
+    padding-bottom: 50px;
+    margin: 0px;
+    font-size: 2rem;
+  } 
+
+  
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 2.1rem;
+  }  
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .icons i:hover { font-size: 2.2rem; }
+  
+}
+
+@media (max-width: 850px) { 
+  #fresh { font-size: 8vw; }
+}
+
+@media (max-width: 380px) { 
+  #fresh { font-size: 10vw; }
+}
+
+
+@media (max-width: 1220px) {
+  .why { height: 900px;}
+  .first-row { 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+  }
+  .second-row { 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+  }
+  .about { margin: 5px 0; height: 120px; width: auto; }
+  .spice {height: 130px; }
+  .chef {height: 160px;}
+  
+}
+
+
+@media (max-width: 700px) {
+  .how { 
+    max-width: 350px;
+    height: 720px;
+    flex-direction: column;
+  }
+
+  #love { font-size: 3rem; width: 265px;}
+
+  iframe {
+    max-width: 305px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .how { 
+    max-width: 320px;
+    height: 720px;
+    flex-direction: column;
+  }
+
+  #love { font-size: 3rem; width: 210px;}
+
+  iframe {
+    max-width: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pack-container {
+
+    max-width: 350px;
+    height: auto;
+
+  }
+}
+
+
+@media (max-width: 1275px) {
+  .packages { flex-direction: column; }  
+  .packages-box { height: 1400px; }
+  .coming-soon { height: 1400px; }
+  .soon-img { flex-direction: column; }
+}
+
+
+@media (max-width: 320px) {
+  nav {height: 60px;}
+  nav .logo a {font-size: 1.3rem;}
+  nav #logo {height: 30px;}
+  nav .openMenu i {font-size: 1.3rem; display: flex;}
+
+  /* .packages-box { width: 20px; } */
+  .pack-container {width: fit-content;}
+  .coming-soon { height: 1400px; }
+  .packages-box h2 { font-size: 30px;}
+}
+
+@media (max-width: 500px) {
+  .coming-soon {height: 900px;}
+  .coming-soon h2 { font-size: 3rem; margin: 10px 0;}
+  .future-products {  width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+}
+
+
+
+
