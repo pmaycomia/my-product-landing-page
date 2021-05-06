@@ -56,7 +56,7 @@ nav .mainMenu .closeMenu , .icons i {
 
 .nav-link {
   margin-right: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(205, 236, 169);
   text-decoration: none;
   font-size: 25px;
 }
@@ -85,6 +85,8 @@ nav .mainMenu .closeMenu , .icons i {
   background-position: center;
   text-transform: uppercase;
   width: auto;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -150,14 +152,23 @@ nav .mainMenu .closeMenu , .icons i {
 
   
 /* E-MAIL SUBSCRIPTION */
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .subscribe {
   
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 250px;
-  width: auto;
+  height: auto;
+  padding: 30px;
+  width: 70wv;
   border-radius: 5px; 
   font-family: 'Montserrat', sans-serif;
 
@@ -177,12 +188,26 @@ nav .mainMenu .closeMenu , .icons i {
 
 .subscribe h3 {
   color: #fffdef;
-  font-size: 30px;
+  font-size: 1rem;
   text-align: center;
 }
 
 input, button {
   font-family: 'Montserrat', sans-serif;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+#submit {
+  height: 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;  
+  background-color: rgb(169, 214, 101);
+  border: transparent;
 }
 
 
@@ -363,7 +388,7 @@ iframe {
 }
 
 
-/* RESPONSIVE  */
+/* RESPONSIVEness  */
 
 @media (max-width: 850px) {
   /* MOBILE */
@@ -438,7 +463,7 @@ iframe {
 
 
 @media (max-width: 1220px) {
-  .why { height: 900px;}
+  .why { height: 900px; width: auto;}
   .first-row { 
     flex-direction: column; 
     justify-content: center;
@@ -449,12 +474,15 @@ iframe {
     justify-content: center;
     align-items: center;  
   }
-  .about { margin: 5px 0; height: 120px; width: auto; }
-  .spice {height: 130px; }
-  .chef {height: 160px;}
+  .about { margin: 5px 0; height: 120px; width: 80vw; }
+  .spice {height: 140px; }
+  .chef {height: 180px;}
   
 }
-
+/* 
+@media (max-width: 900px) {
+  .about { width: 80%; }
+} */
 
 @media (max-width: 700px) {
   .how { 
