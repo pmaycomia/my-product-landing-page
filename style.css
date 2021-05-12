@@ -54,9 +54,9 @@ nav .mainMenu .closeMenu , .icons i {
   cursor: pointer;
 }
 
-.nav-link {
+.navLink {
   margin-right: 50px;
-  color: rgb(205, 236, 169);
+  color: rgb(111, 173, 35);
   text-decoration: none;
   font-size: 25px;
 }
@@ -430,7 +430,7 @@ iframe {
     right: 20px;
   }
 
-  .nav-link {
+  .navLink {
     padding-bottom: 50px;
     margin: 0px;
     font-size: 2rem;
